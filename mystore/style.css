@@ -1,4 +1,4 @@
-body{background-image:linear-gradient(to right,yellow,lime);}
+body{background-image:linear-gradient(to bottom,grey,white);}
 
 @media screen and (max-width: 600px) {
   .nav-bar a{display: none;}
