@@ -2,26 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head><title>NEON</title>
-<link rel="stylesheet" href="neon.css">
+    <title>HEAS.io</title>
 </head>
-<body>
-<a href=""><span></span><span></span><span></span><span></span><p id="cdTime"></p></a>
-<script>
-          var countDownDate = new Date("Mar 15, 2021 09:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("cdTime").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("cdTime").innerHTML = "EXPIRED";
-  }
-}, 1);
-      </script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+<style>
+    html,body{
+        margin: 0%;
+        width: 100%;
+        font-family: 'Roboto Mono', monospace;
+        background-image: linear-gradient(to bottom,white,yellow);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #header{
+        text-align: center;
+        margin: 0%;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-image: linear-gradient(to bottom,grey,black);
+        color: white;
+    }
+    .btnhead{
+        padding : 15px;
+        text-align: center;
+        display: inline-block;
+    }
+    #subhead{
+        padding: 5px;
+        background-image: linear-gradient(to bottom,gold,rgb(255, 132, 0));
+    }
+</style>
+<body><div id="header">
+    <div class="btnhead">HEMAND SUNNY</div>
+    <div class="btnhead">home</div>
+    <div class="btnhead">about</div>
+    <div class="btnhead">portfolio</div>
+    <div class="btnhead">contact</div>
+
+</div>
+    <div id="subhead">Under production</div>
+</body>
+</html>
